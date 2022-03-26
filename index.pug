@@ -1,4 +1,5 @@
 - let lista = ["Posts", "About", "Friends  458", "Photos", "Videos", "Check-Ins", "More"]
+- let logo = ["img/logo/home.png","img/logo/watch.png","img/logo/group.png","img/logo/game.png"]
 
 
 doctype html
@@ -14,9 +15,18 @@ html(lang="en")
             .container-nav 
                 .navegation 
                     .logo-barra 
-                        
+                        img(src="img/fb.png")
+                        .logo-barra__search 
+                            i
+                            input(type="search" placeholder="Search Facebook")
                     .adrress 
+                        for logos in logo
+                            a(href="#") 
+                                img(src= logos)
                     .perfil 
+                        
+
+
             .container-portada 
                 .container-portada-perfil 
                     img(src="")
