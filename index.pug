@@ -5,12 +5,19 @@
 - let newlogo = ["img/newlogo/1.png", "img/newlogo/2.png", "img/newlogo/3.png", "img/newlogo/4.png", "img/newlogo/5.png", "img/newlogo/6.png"]
 - let newLogoText = ["Massa eros etiam diam massa gravida nullam urna", "Gravida nullam urna ", "Etiam diam massa", "Lives in Lutsk", "From Lutsk", "Followed by 97 people"]
 - let gallery = ["img/gallery/1.png", "img/gallery/2.png", "img/gallery/3.png", "img/gallery/4.png", "img/gallery/5.png", "img/gallery/6.png", "img/gallery/7.png", "img/gallery/8.png", "img/gallery/9.png"]
+- let publicIcon = ["img/gallery/photo.png", "img/gallery/solicitud.png", "img/gallery/emoji.png"]
+- let publicText = ["Photo/Video", "Tag Friends", "Feelling/Activity"]
 
 
 
 mixin newlogom (icon, text)
     img(src=icon)
     span=text 
+
+
+mixin public (iconpublic, textpublic)
+    img(src=iconpublic)
+    span=textpublic
 
 doctype html
 html(lang="en")
@@ -43,10 +50,10 @@ html(lang="en")
                                     a(href="#")
                                         img(src=logo2)
             .container-portada 
-                img(src="")
+                img(src="img/perfil/portada.png")
                 .container-portada-perfil 
-                    img(src="")
-                    h1
+                    img(src="img/perfil/perfil.png")
+                    h1  Ronald Oliver
         section.listas 
             .container-general 
                 .lista-massage 
@@ -72,10 +79,59 @@ html(lang="en")
                             for miNewLogo, text1 in newlogo
                                 +newlogom (miNewLogo, newLogoText[text1])
                     .info-photo
-                         
+                        .info-photo__text 
+                            h3 Photos
+                            a(href="#") See All Photos 
+                        .info-photo__gallery 
+                            for gallery1 in gallery 
+                                img(src= gallery1)
                     .info-public 
+                        .info-public__top 
+                            img(src="img/gallery/people.png")
+                            input(type="search" placeholder="Write something to Roland…")
+                        .info-public__down 
+                            for daddy, yankee in publicIcon
+                                +public(daddy, publicText[yankee])
                     .info-post 
+                        h3 Posts
+                        .info-post__filter 
+                            i 
+                            span Filters
                     .info-deslice 
+                        .info-deslice__top 
+                            img(src="img/perfil/perfilsmall.png")
+                            .info-deslice__top--items 
+                                a(href="#") Ronald Oliver
+                                span was with
+                                a(href="#") Steve Cunningham
+                                span November 16, 2021 
+                            img(src="img/logo/more.png")
+                        .info-deslice__top-center 
+                            p Nunc scelerisque tincidunt elit. Vestibulum non mi ipsum. Cras pretium suscipit tellus sit amet aliquet. Vestibulum maximus lacinia massa non porttitor.
+                        .info-deslice__center 
+                            img(src="img/perfil/rolex.png")
+                        .info-deslice__center-down 
+                            .info-deslice__center-down-1
+                                .info-deslice__center-down-2                         
+                                    img(src="img/perfil/like.png")
+                                    img(src="img/perfil/corazon.png")
+                                span 26
+                            span 1 comment
+                        .info-deslice__down 
+                            .info-deslice__down-top 
+                                i 
+                                span like 
+                            .info-deslice__down-down 
+                                i 
+                                span Comment 
+                        .info-deslice__down-1 
+                            img(src="img/gallery/people.png")
+                            input(type="search" placeholder="Write a comment…")
+
+
+
+                        
+
 
 
                    
