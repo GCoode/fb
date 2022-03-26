@@ -1,0 +1,20 @@
+- let lista = ["Posts", "About", "Friends  458", "Photos", "Videos", "Check-Ins", "More"]
+- let logoCenter = ["img/logo/home.png","img/logo/watch.png","img/logo/group.png","img/logo/game.png"]
+- let logoRight = ["img/logo/plus.png", "img/logo/message.png", "img/logo/bell.png", "img/logo/down.png"]
+- let logoList = ["img/logo/message.png", "img/logo/phone.png", "img/logo/people.png", "img/logo/more.png"]
+- let newlogo = ["img/newlogo/1.png", "img/newlogo/2.png", "img/newlogo/3.png", "img/newlogo/4.png", "img/newlogo/5.png", "img/newlogo/6.png"]
+- let newLogoText = ["Massa eros etiam diam massa gravida nullam urna", "Gravida nullam urna ", "Etiam diam massa", "Lives in Lutsk", "From Lutsk", "Followed by 97 people"]
+- let gallery = ["img/gallery/1.png", "img/gallery/2.png", "img/gallery/3.png", "img/gallery/4.png", "img/gallery/5.png", "img/gallery/6.png", "img/gallery/7.png", "img/gallery/8.png", "img/gallery/9.png"]
+- let publicIcon = ["img/gallery/photo.png", "img/gallery/solicitud.png", "img/gallery/emoji.png"]
+- let publicText = ["Photo/Video", "Tag Friends", "Feelling/Activity"]
+
+
+
+mixin newlogom (icon, text)
+    img(src=icon)
+    span=text 
+
+
+mixin public (iconpublic, textpublic)
+    img(src=iconpublic)
+    span=textpublic
