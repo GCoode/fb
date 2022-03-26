@@ -30,10 +30,11 @@ html(lang="en")
                                     a(href="#")
                                         img(src=logo2)
             .container-portada 
-                img(src="img/perfil/portada.png")
-                .container-portada-perfil 
-                    img(src="img/perfil/perfil.png")
-                    h1  Ronald Oliver
+                .cover_and_profile 
+                    img(src="img/perfil/portada.png")
+                    .container-portada-perfil 
+                        img(src="img/perfil/perfil.png")
+                        h1  Ronald Oliver
         section.listas 
             .container-general 
                 .lista-massage 
@@ -46,18 +47,20 @@ html(lang="en")
                             for listaLogo in logoList
                                 if listaLogo == "img/logo/message.png"
                                     .masage-items 
-                                        span.massageLogo 
                                         img.image-logo(src=listaLogo)
+                                        span.massageLogo Message
                                 else 
-                                    img.image-logo__item(src=listaLogo)
+                                    .masage-items
+                                        img.image-logo__item(src=listaLogo)
         section.info 
             .container-general 
-                .main 
+                .main   
                     .info-item 
                         h2 Intro
                         .info-item__text 
                             for miNewLogo, text1 in newlogo
-                                +newlogom (miNewLogo, newLogoText[text1])
+                                .info-item-image
+                                    +newlogom (miNewLogo, newLogoText[text1])
                     .info-photo
                         .info-photo__text 
                             h3 Photos
@@ -71,7 +74,8 @@ html(lang="en")
                             input(type="search" placeholder="Write something to Roland…")
                         .info-public__down 
                             for daddy, yankee in publicIcon
-                                +public(daddy, publicText[yankee])
+                                .contenedor_de_esto
+                                    +public(daddy, publicText[yankee])
                     .info-post 
                         h3 Posts
                         .info-post__filter 
