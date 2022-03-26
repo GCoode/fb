@@ -1,7 +1,7 @@
 - let lista = ["Posts", "About", "Friends  458", "Photos", "Videos", "Check-Ins", "More"]
 - let logoCenter = ["img/logo/home.png","img/logo/watch.png","img/logo/group.png","img/logo/game.png"]
 - let logoRight = ["img/logo/plus.png", "img/logo/message.png", "img/logo/bell.png", "img/logo/down.png"]
-- let logoList = ["img/logo/massage.png", "img/logo/phone.png", "img/logo/people.png", "img/logo/more.png"]
+- let logoList = ["img/logo/message.png", "img/logo/phone.png", "img/logo/people.png", "img/logo/more.png"]
 
 
 
@@ -50,12 +50,13 @@ html(lang="en")
                     .lista-right 
                         .lista-right__massage 
                             for listaLogo in logoList
-                                if listaLogo == "img/logo/massage.png"
+                                if listaLogo == "img/logo/message.png"
                                     .masage-items 
                                         span.massageLogo 
                                         img.image-logo(src=listaLogo)
                                 else 
                                     img.image-logo__item(src=listaLogo)
+
                              
                             
 
