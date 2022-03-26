@@ -1,5 +1,7 @@
 - let lista = ["Posts", "About", "Friends  458", "Photos", "Videos", "Check-Ins", "More"]
-- let logo = ["img/logo/home.png","img/logo/watch.png","img/logo/group.png","img/logo/game.png"]
+- let logoCenter = ["img/logo/home.png","img/logo/watch.png","img/logo/group.png","img/logo/game.png"]
+- let logoRight = ["img/logo/plus.png", "img/logo/message.png", "img/logo/bell.png", "img/logo/down.png"]
+
 
 
 doctype html
@@ -8,8 +10,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
         title FB
-        link(rel="stylesheet", href="styles.css")
     body 
         header 
             .container-nav 
@@ -20,13 +22,18 @@ html(lang="en")
                             i
                             input(type="search" placeholder="Search Facebook")
                     .adrress 
-                        for logos in logo
+                        for logos in logoCenter
                             a(href="#") 
                                 img(src= logos)
                     .perfil 
-                        
-
-
+                        .perfil-container 
+                            .perfil-container__items 
+                                img(src="img/profile.png")
+                                span Ronald Oliver
+                            .perfil-container__logos 
+                                for logo2 in logoRight
+                                    a(href="#")
+                                        img(src= logo2)
             .container-portada 
                 .container-portada-perfil 
                     img(src="")
