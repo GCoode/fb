@@ -308,6 +308,20 @@ section.info {
                 border-radius: 8px;
                 padding: 15px 17px;
                 height: max-content;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .info-post__filter {
+                    padding: 9px 11px;
+                    background-color: #3a3b3c;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
             }
             .info-deslice {
                 grid-area: publish;
@@ -315,6 +329,49 @@ section.info {
                 border-radius: 8px;
                 padding: 15px 17px;
                 height: max-content;
+                .info-deslice__top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 11px;
+                    .info_deslice_container {
+                        display: flex;
+                        img  {
+                            &:first-child {
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .info-deslice__top--items_child {
+                            a {
+                                text-decoration: none;
+                                font-size: pxtoem(14);
+                                font-weight: 500;
+                                margin-right: 25px;
+                            }
+                            span {
+                                color: #606770;
+                                font-weight: 200;
+                                font-size: pxtoem(14);
+                                margin-right: 10px;
+                            }
+                        }
+                        span {
+                            color: #606770;
+                            font-size: pxtoem(12);
+                        }
+                    }
+                    .more_image_container {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #3a3b3c;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

@@ -416,6 +416,30 @@ section.info .container-general .main .info-post {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.info .container-general .main .info-post .info-post__filter {
+  padding: 9px 11px;
+  background-color: #3a3b3c;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+section.info .container-general .main .info-post .info-post__filter img {
+  margin-right: 10px;
 }
 section.info .container-general .main .info-deslice {
   -ms-grid-row: 5;
@@ -427,4 +451,56 @@ section.info .container-general .main .info-deslice {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+section.info .container-general .main .info-deslice .info-deslice__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+section.info .container-general .main .info-deslice .info-deslice__top .info_deslice_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.info .container-general .main .info-deslice .info-deslice__top .info_deslice_container img:first-child {
+  margin-right: 10px;
+}
+section.info .container-general .main .info-deslice .info-deslice__top .info_deslice_container .info-deslice__top--items_child a {
+  text-decoration: none;
+  font-size: 0.875em;
+  font-weight: 500;
+  margin-right: 25px;
+}
+section.info .container-general .main .info-deslice .info-deslice__top .info_deslice_container .info-deslice__top--items_child span {
+  color: #606770;
+  font-weight: 200;
+  font-size: 0.875em;
+  margin-right: 10px;
+}
+section.info .container-general .main .info-deslice .info-deslice__top .info_deslice_container span {
+  color: #606770;
+  font-size: 0.75em;
+}
+section.info .container-general .main .info-deslice .info-deslice__top .more_image_container {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3a3b3c;
+  cursor: pointer;
 }

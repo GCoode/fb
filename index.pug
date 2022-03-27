@@ -79,17 +79,20 @@ html(lang="en")
                     .info-post 
                         h3 Posts
                         .info-post__filter 
-                            i 
+                            img(src="img/logo/filter.png")
                             span Filters
                     .info-deslice 
                         .info-deslice__top 
-                            img(src="img/perfil/perfilsmall.png")
-                            .info-deslice__top--items 
-                                a(href="#") Ronald Oliver
-                                span was with
-                                a(href="#") Steve Cunningham
-                                span November 16, 2021 
-                            img(src="img/logo/more.png")
+                            .info_deslice_container 
+                                img(src="img/perfil/perfilsmall.png")
+                                .info-deslice__top--items 
+                                    .info-deslice__top--items_child
+                                        a(href="#") Ronald Oliver
+                                        span was with
+                                        a(href="#") Steve Cunningham
+                                    span November 16, 2021 
+                            .more_image_container
+                                img(src="img/logo/more.png")
                         .info-deslice__top-center 
                             p Nunc scelerisque tincidunt elit. Vestibulum non mi ipsum. Cras pretium suscipit tellus sit amet aliquet. Vestibulum maximus lacinia massa non porttitor.
                         .info-deslice__center 
